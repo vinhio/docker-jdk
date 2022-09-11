@@ -1,1 +1,1 @@
-# docker-jdk
+# Docker for JDK (Java)
