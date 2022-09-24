@@ -1,7 +1,5 @@
 VERSION ?= 'latest'
 
-all: build version run
-
 build:
 	docker build --no-cache -t vinhio/jdk:11-alpine .
 
