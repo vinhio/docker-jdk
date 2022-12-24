@@ -1,14 +1,14 @@
 VERSION ?= 'latest'
 
 build:
-	docker build --no-cache -t vinhio/jdk:11-alpine .
+	docker build --no-cache -t vinhio/jdk:17-alpine .
 
 run:
-	docker run -ti -u java vinhio/jdk:11-alpine bash
+	docker run -ti -u java vinhio/jdk:17-alpine bash
 
 version:
 	#make version VERSION="latest"
-	docker tag vinhio/jdk:11-alpine vinhio/jdk:$(VERSION)
+	docker tag vinhio/jdk:17-alpine vinhio/jdk:$(VERSION)
 
 push:
 	#make push VERSION="latest"
